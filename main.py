@@ -4,9 +4,6 @@ from requests import get
 from datetime import date
 import numpy as np
 
-
-#commrn
-
 def lambda_handler(event, context):
     print("###")
     gc = gspread.service_account(filename='credential.json')
