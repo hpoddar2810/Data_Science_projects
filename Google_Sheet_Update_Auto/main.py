@@ -72,10 +72,6 @@ def lambda_handler(event, context):
 
     #print(A)
     todaydate = str(date.today())
-    # def myconverter(o):
-    #     if isinstance(o, date):
-    #         return o.__str__()
-    # afterdump = json.dumps(todaydate, default=myconverter)
     for row in A:
         sheet.append_row(row + [todaydate])
         #print(row)
